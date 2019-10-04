@@ -63,7 +63,7 @@
                             <h6 class="no-padding txt-md">Payroll</h6>
                         </div>
                         <div class="col s5 xl5">
-                            <p class="no-padding center mt txt-sm">Total({{$t_states}})</p>
+                            <p class="no-padding center mt txt-sm">Total</p>
                         </div>
                     </div>
                 </div>

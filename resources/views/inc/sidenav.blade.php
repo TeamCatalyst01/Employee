@@ -42,7 +42,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/states" class="waves-effect waves-grey">
+                            <a href="/open-payroll/payroll" class="waves-effect waves-grey">
                             <i class="material-icons">grid_on</i>
                                 Payroll
                             </a>
