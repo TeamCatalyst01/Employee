@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </a>
-3            <a href="/salaries" class="white-text hide-on-small-only">
+            <a href="/salaries" class="white-text hide-on-small-only">
                 <div class="card-panel green col s8 offset-s2 m4 l4 xl2 mx-20">
                     <div class="row">
                         <div class="col s7 xl7">
@@ -69,7 +69,7 @@
                 </div>
             </a>
             <a href="/divisions" class="white-text hide-on-small-only">
-                <div style="margin-left:20sudpx;" class="card-panel orange col s8 s2 m4 l4 xl2 mx-20 pppp">
+                <div style="margin-left:20px;" class="card-panel orange col s8 s2 m4 l4 xl2 mx-20 pppp">
                     <div class="row">
                         <div class="col s7 xl7">
                             <i class="material-icons medium white-text pt-5">business</i>
