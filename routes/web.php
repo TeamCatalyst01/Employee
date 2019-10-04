@@ -104,3 +104,10 @@ Route::get('/reports','ReportsController@index')->name('reports.index');
 
 //Generate PDF
 Route::post('/reports/pdf','ReportsController@makeReport')->name('reports.make');
+/*
+|--------------------------------------------------------------------------
+| Open Payroll Web Routes
+|--------------------------------------------------------------------------
+*/
+
+\CleaniqueCoders\OpenPayroll\OpenPayroll::routes();

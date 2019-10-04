@@ -19,34 +19,31 @@ class CreateEmployeesTable extends Migration
             $table->string('last_name');
             $table->string('email');
             $table->string('phone');
+            $table->integer('gender_id')->unsigned();
+            $table->date('join_date');
+            $table->date('birth_date');
             $table->mediumText('address');
+            $table->string('country');
+            $table->string('state');
+            $table->string('city');
+    
+            $table->integer('age');
+            $table->string('picture');
             
             /**
              *  if we need add a foreign key constraint then
              *  the column should be unsigned integer
              */
-            $table->integer('gender_id')->unsigned();
-            $table->date('join_date');
-            $table->date('birth_date');
-            $table->integer('dept_id')->unsigned();
-            $table->integer('country_id')->unsigned();
-            $table->integer('state_id')->unsigned();
-            $table->integer('city_id')->unsigned();
-            $table->integer('division_id')->unsigned();
             $table->integer('salary_id')->unsigned();
-            $table->integer('age');
-            $table->string('picture');
+            $table->integer('department_id')->unsigned();
+            $table->integer('designation_id')->unsigned();
 
             /**
              *  Add foreign key constraints to these columns
              */
             $table->foreign('dept_id')->references('id')->on('departments');
-            $table->foreign('country_id')->references('id')->on('countries');
-            $table->foreign('state_id')->references('id')->on('states');
-            $table->foreign('city_id')->references('id')->on('cities');
-            $table->foreign('division_id')->references('id')->on('divisions');
+            $table->foreign('designation_id')->references('id')->on('designations');
             $table->foreign('salary_id')->references('id')->on('salaries');
-            $table->foreign('gender_id')->references('id')->on('genders');
             $table->timestamps();
             
             /**
