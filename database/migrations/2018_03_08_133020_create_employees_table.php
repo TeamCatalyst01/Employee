@@ -32,7 +32,7 @@ class CreateEmployeesTable extends Migration
              *  if we need add a foreign key constraint then
              *  the column should be unsigned integer
              */
-            $table->integer('department_id')->unsigned();
+            $table->integer('dept_id')->unsigned();
             $table->integer('designation_id')->unsigned();
             $table->integer('salary_id')->unsigned();
        
