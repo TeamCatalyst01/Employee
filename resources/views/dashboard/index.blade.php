@@ -68,15 +68,15 @@
                     </div>
                 </div>
             </a>
-            <a href="/divisions" class="white-text hide-on-small-only">
+            <a href="/designations" class="white-text hide-on-small-only">
                 <div style="margin-left:20px;" class="card-panel orange col s8 s2 m4 l4 xl2 mx-20 pppp">
                     <div class="row">
                         <div class="col s7 xl7">
                             <i class="material-icons medium white-text pt-5">business</i>
-                            <h6 class="no-padding txt-md">Divisions</h6>
+                            <h6 class="no-padding txt-md">Designations</h6>
                         </div>
                         <div class="col s5 xl5">
-                            <p class="no-padding center mt txt-sm">Total({{$t_divisions}})</p>
+                            <p class="no-padding center mt txt-sm">Total({{$t_designations}})</p>
                         </div>
                     </div>
                 </div>

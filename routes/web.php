@@ -37,10 +37,10 @@ Route::resource('/salaries','SalariesController');
 Route::post('/salaries/search','SalariesController@search')->name('salaries.search');
 
 /**
- *  Divisions Route(s)
+ *  Designations Route(s)
  */
-Route::resource('/divisions','DivisionsController');
-Route::post('/divisions/search','DivisionsController@search')->name('divisions.search');
+Route::resource('/designations','DesignationsController');
+Route::post('/designations/search','DesignationsController@search')->name('designations.search');
 
 /**
  *  States Route(s)

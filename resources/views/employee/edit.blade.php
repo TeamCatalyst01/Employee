@@ -124,13 +124,13 @@
                             </div>
                             <div class="input-field col s12 m12 l12 xl8 offset-xl2">
                                 <i class="material-icons prefix">business</i>
-                                <select name="division">
-                                    <option value="" disabled >Choose a Division</option>
-                                    @foreach($divisions as $division)
-                                        <option value="{{$division->id}}" {{ old('division') ? 'selected' : '' }} {{ $employee->empDivision==$division ? 'selected' : '' }} >{{$division->division_name}}</option>
+                                <select name="designation">
+                                    <option value="" disabled >Choose a Designation</option>
+                                    @foreach($designations as $designation)
+                                        <option value="{{$designation->id}}" {{ old('designation') ? 'selected' : '' }} {{ $employee->empDesignation==$designation ? 'selected' : '' }} >{{$designation->designation_name}}</option>
                                     @endforeach
                                 </select>
-                                <label>Division</label>
+                                <label>Designation</label>
                             </div>
                             <div class="file-field input-field col s12 m8 offset-m2 l8 offset-l2 xl8 offset-xl2">
                                 <div class="btn">

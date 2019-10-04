@@ -38,7 +38,7 @@
                         <th>Image</th>
                         <th>Name</th>
                         <th>Department</th>
-                        <th>Division</th>
+                        <th>Designation</th>
                         <th>Join Date</th>
                         <th>Options</th>
                     </tr>
@@ -54,7 +54,7 @@
                                 </td>
                                 <td>{{$employee->first_name}} {{$employee->last_name}}</td>
                                 <td>{{$employee->empDepartment->dept_name}}</td>
-                                <td>{{$employee->empDivision->division_name}}</td>
+                                <td>{{$employee->empDesignation->designation_name}}</td>
                                 <td>{{$employee->join_date}}</td>
                                 <td>
                                 <a href="{{route('employees.show',$employee->id)}}" class="btn btn-small btn-floating waves=effect waves-light teal lighten-2"><i class="material-icons">list</i></a>

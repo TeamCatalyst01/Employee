@@ -9,7 +9,7 @@ use App\Department;
 use App\Country;
 use App\City;
 use App\Salary;
-use App\Division;
+use App\Designation;
 use App\State;
 use App\Gender;
 use DB;
@@ -53,7 +53,7 @@ class EmployeesController extends Controller
         $cities = City::orderBy('city_name','asc')->get();
         $states = State::orderBy('state_name','asc')->get();
         $salaries = Salary::orderBy('s_amount','asc')->get();
-        $divisions = Division::orderBy('division_name','asc')->get();
+        $designations = Designation::orderBy('designation_name','asc')->get();
         $genders = Gender::orderBy('gender_name','asc')->get();
         /**
          *  return the view with an array of all these objects
@@ -64,7 +64,7 @@ class EmployeesController extends Controller
             'cities'       => $cities,
             'states'       => $states,
             'salaries'     => $salaries,
-            'divisions'    => $divisions,
+            'designations'    => $designations,
             'genders'      => $genders
         ]);
     }
@@ -143,7 +143,7 @@ class EmployeesController extends Controller
         $cities       = City::orderBy('city_name','asc')->get();
         $states       = State::orderBy('state_name','asc')->get();
         $salaries     = Salary::orderBy('s_amount','asc')->get();
-        $divisions    = Division::orderBy('division_name','asc')->get();
+        $designations    = Designation::orderBy('designation_name','asc')->get();
         $genders      = Gender::orderBy('gender_name','asc')->get();
 
         $employee = Employee::find($id);
@@ -153,7 +153,7 @@ class EmployeesController extends Controller
             'cities'       => $cities,
             'states'       => $states,
             'salaries'     => $salaries,
-            'divisions'    => $divisions,
+            'designations'    => $designations,
             'genders'      => $genders,
             'employee'     => $employee
         ]);
@@ -244,7 +244,7 @@ class EmployeesController extends Controller
             'phone'          =>  'required|max:13',
             'gender'         =>  'required',
             'department'     =>  'required',
-            'division'       =>  'required',
+            'designation'       =>  'required',
             'salary'         =>  'required',
             'state'          =>  'required',
             'city'           =>  'required',
@@ -291,7 +291,7 @@ class EmployeesController extends Controller
         //Format Date then insert it to the database
         $employee->birth_date   = date('Y-m-d', strtotime(str_replace('-', '/', $request->input('birth_date'))));
         $employee->gender_id    = $request->input('gender');
-        $employee->division_id  = $request->input('division');
+        $employee->designation_id  = $request->input('designation');
         $employee->salary_id    = $request->input('salary'); 
         $employee->dept_id      = $request->input('department');
         $employee->city_id      = $request->input('city');

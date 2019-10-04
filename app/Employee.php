@@ -37,8 +37,8 @@ class Employee extends Model
     /**
      * @return object
      */
-    public function empDivision(){
-        return $this->belongsTo('App\Division','division_id');
+    public function empDesignation(){
+        return $this->belongsTo('App\Designation','designation_id');
     }
 
     /**

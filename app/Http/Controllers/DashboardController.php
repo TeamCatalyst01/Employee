@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Employee;
 use App\Department;
-use App\Division;
+use App\Designation;
 use App\Country;
 use App\City;
 use App\State;
@@ -51,9 +51,9 @@ class DashboardController extends Controller
 
         $t_admins = Admin::all()->count();
         $t_employees = Employee::all()->count();
-        $t_states = State::all()->count();
+        // $t_states = State::all()->count();
         $t_departments = Department::all()->count();
-        $t_designations = Deignation::all()->count();
+        $t_designations = Designation::all()->count();
         $t_salaries = Salary::all()->count();
 
 
@@ -64,7 +64,7 @@ class DashboardController extends Controller
                 'emp_count_3'     =>  $emp_count_3,
                 'emp_count_4'     =>  $emp_count_4,
                 't_employees'     =>  $t_employees,
-                't_states'        =>  $t_states,
+                // 't_states'        =>  $t_states,
                 't_salaries'      =>  $t_salaries,
                 't_designations'     =>  $t_designations,
                 't_departments'   =>  $t_departments,

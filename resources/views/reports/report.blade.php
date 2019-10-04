@@ -36,7 +36,7 @@
                     <th>City</th>
                     <th>Salary</th>
                     <th>Department</th>
-                    <th>Division</th>
+                    <th>Designation</th>
                     <th>age</th>
                     <th>address</th>
                     <th>Join Date</th>
@@ -56,7 +56,7 @@
                         <td>{{$employee->empCity->city_name}}</td>
                         <td>{{$employee->empSalary->s_amount}}</td>
                         <td>{{$employee->empDepartment->dept_name}}</td>
-                        <td>{{$employee->empDivision->division_name}}</td>
+                        <td>{{$employee->empDesignation->designation_name}}</td>
                         <td>{{$employee->age}}</td>
                         <td>{{$employee->address}}</td>
                         <td>{{$employee->join_date}}</td>

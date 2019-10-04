@@ -36,7 +36,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/divisions" class="waves-effect waves-grey">
+                            <a href="/designations" class="waves-effect waves-grey">
                             <i class="material-icons">business</i>
                                 Designation
                             </a>

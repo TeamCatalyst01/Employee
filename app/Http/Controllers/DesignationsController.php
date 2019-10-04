@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Division;
+use App\Designation;
 
 class DesignationsController extends Controller
 {
@@ -26,8 +26,8 @@ class DesignationsController extends Controller
          *  they are all the same.
          */
         
-        $divisions = Division::paginate(5);
-        return view('sys_mg.divisions.index')->with('divisions',$divisions);
+        $designations = Designation::paginate(5);
+        return view('sys_mg.designations.index')->with('designations',$designations);
     }
 
     /**
@@ -37,7 +37,7 @@ class DesignationsController extends Controller
      */
     public function create()
     {
-        return view('sys_mg.divisions.create');
+        return view('sys_mg.designations.create');
     }
 
     /**
@@ -49,12 +49,12 @@ class DesignationsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'division_name' => 'required|min:3|unique:divisions'
+            'designation_name' => 'required|min:3|unique:designations'
         ]);
-        $division = new Division();
-        $division->division_name = $request->input('division_name');
-        $division->save();
-        return redirect('/divisions')->with('info','New Division has been created!');
+        $designation = new Designation();
+        $designation->designation_name = $request->input('designation_name');
+        $designation->save();
+        return redirect('/designations')->with('info','New Designation has been created!');
     }
 
     /**
@@ -76,8 +76,8 @@ class DesignationsController extends Controller
      */
     public function edit($id)
     {
-        $division = Division::find($id);
-        return view('sys_mg.divisions.edit')->with('division',$division);
+        $designation = Designation::find($id);
+        return view('sys_mg.designations.edit')->with('designation',$designation);
     }
 
     /**
@@ -90,12 +90,12 @@ class DesignationsController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request,[
-            'division_name' => 'required|min:3|unique:divisions'
+            'designation_name' => 'required|min:3|unique:designations'
         ]);
-        $division = Division::find($id);
-        $division->division_name = $request->input('division_name');
-        $division->save();
-        return redirect('/divisions')->with('info','Selected Division has been updated!');
+        $designation = Designation::find($id);
+        $designation->designation_name = $request->input('designation_name');
+        $designation->save();
+        return redirect('/designations')->with('info','Selected Designation has been updated!');
     }
 
     /**
@@ -106,9 +106,9 @@ class DesignationsController extends Controller
      */
     public function destroy($id)
     {
-        $division = Division::find($id);
-        $division->delete();
-        return redirect('/divisions')->with('info','Selected Division has been deleted!');
+        $designation = Designation::find($id);
+        $designation->delete();
+        return redirect('/designations')->with('info','Selected Designation has been deleted!');
     }
 
     /**
@@ -122,9 +122,9 @@ class DesignationsController extends Controller
             'search' => 'required'
         ]);
         $str = $request->input('search');
-        $divisions = Division::where( 'division_name' , 'LIKE' , '%'.$str.'%' )
-            ->orderBy('division_name','asc')
+        $designations = Designation::where( 'designation_name' , 'LIKE' , '%'.$str.'%' )
+            ->orderBy('designation_name','asc')
             ->paginate(4);
-        return view('sys_mg.divisions.index')->with([ 'divisions' => $divisions ,'search' => true ]);
+        return view('sys_mg.designations.index')->with([ 'designations' => $designations ,'search' => true ]);
     }
 }

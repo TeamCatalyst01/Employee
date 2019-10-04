@@ -10136,7 +10136,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       _this59.images = [];
       _this59.itemWidth = _this59.$el.find('.carousel-item').first().innerWidth();
       _this59.itemHeight = _this59.$el.find('.carousel-item').first().innerHeight();
-      _this59.dim = _this59.itemWidth * 2 + _this59.options.padding || 1; // Make sure dim is non zero for divisions.
+      _this59.dim = _this59.itemWidth * 2 + _this59.options.padding || 1; // Make sure dim is non zero for designations.
       _this59._autoScrollBound = _this59._autoScroll.bind(_this59);
       _this59._trackBound = _this59._track.bind(_this59);
 
