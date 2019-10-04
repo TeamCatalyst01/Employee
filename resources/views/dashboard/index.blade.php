@@ -78,7 +78,7 @@
                         <div class="col s5 xl5">
                             <p class="no-padding center mt txt-sm">Total({{$t_divisions}})</p>
                         </div>
-                    </div
+                    </div>
                 </div>
             </a>
         </div>

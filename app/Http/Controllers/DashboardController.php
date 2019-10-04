@@ -51,11 +51,9 @@ class DashboardController extends Controller
 
         $t_admins = Admin::all()->count();
         $t_employees = Employee::all()->count();
-        $t_countries = Country::all()->count();
         $t_states = State::all()->count();
-        $t_cities = City::all()->count();
         $t_departments = Department::all()->count();
-        $t_divisions = Division::all()->count();
+        $t_designations = Deignation::all()->count();
         $t_salaries = Salary::all()->count();
 
 
@@ -66,11 +64,9 @@ class DashboardController extends Controller
                 'emp_count_3'     =>  $emp_count_3,
                 'emp_count_4'     =>  $emp_count_4,
                 't_employees'     =>  $t_employees,
-                't_countries'     =>  $t_countries,
-                't_cities'        =>  $t_cities,
                 't_states'        =>  $t_states,
                 't_salaries'      =>  $t_salaries,
-                't_divisions'     =>  $t_divisions,
+                't_designations'     =>  $t_designations,
                 't_departments'   =>  $t_departments,
                 't_admins'        =>  $t_admins
             ]);
