@@ -58,7 +58,7 @@
                             @if(isset($search))
                                 <tr>
                                     <td colspan="3">
-                                        <a href="/states" class="right">Show All</a>
+                                        <a href="/payrolls" class="right">Show All</a>
                                     </td>
                                 </tr>
                             @endif

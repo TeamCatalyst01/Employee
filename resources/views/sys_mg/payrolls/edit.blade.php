@@ -19,7 +19,7 @@
                         </form>
                     </div>
                     <div class="card-action">
-                        <a href="/states">Go Back</a>
+                        <a href="/payrolls">Go Back</a>
                     </div>
                 </div>
             </div>

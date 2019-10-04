@@ -6,7 +6,7 @@
                 <h4 class="center grey-text text-darken-2 card-title">Add Payroll</h4>
                 <div class="card-content">
                     <div class="row">
-                        <form action="{{route('states.store')}}" method="POST">
+                        <form action="{{route('payrolls.store')}}" method="POST">
                             <div class="input-field no-margin">
                                 <i class="material-icons prefix">grid_on</i>
                                 <input type="text" name="state_name" id="state_name" class="validate" value="{{ Request::old('state_name') ? : '' }}">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="card-action">
-                    <a href="/states">Go Back</a>
+                    <a href="/payrolls">Go Back</a>
                 </div>
             </div>
         </div>

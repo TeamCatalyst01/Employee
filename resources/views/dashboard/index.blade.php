@@ -56,7 +56,7 @@
                 </div>
             </a>
             <a href="/states" class="white-text hide-on-small-only">
-                <div class="card-panel blue col s8 offset-s2 m4 offset-m2 l4 offset-l2 xl2 mx-20">
+                <div class="card-panel blue col s8 offset-s2 m4 offset-m2 l4 offset-l2 xl2 offset-xl1 ml-14">
                     <div class="row">
                         <div class="col s7 xl7">
                             <i class="material-icons medium white-text pt-5">grid_on</i>
@@ -69,7 +69,7 @@
                 </div>
             </a>
             <a href="/divisions" class="white-text hide-on-small-only">
-                <div class="mx-20 card-panel orange col s8 offset-s2 m4 l4 xl2">
+                <div style="margin-left:20px;" class="card-panel orange col s8 s2 m4 l4 xl2 mx-20 pppp">
                     <div class="row">
                         <div class="col s7 xl7">
                             <i class="material-icons medium white-text pt-5">business</i>
