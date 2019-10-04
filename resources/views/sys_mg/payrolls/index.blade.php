@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-    <h4 class="grey-text text-darken-2 center">State Management</h4>
+    <h4 class="grey-text text-darken-2 center">Payroll Management</h4>
     
     {{-- Include the searh component with with title and route --}}
     @component('sys_mg.inc.search',['title' => 'State' , 'route' => 'states.search'])
@@ -12,16 +12,16 @@
         <div class="card col s12 m12 l12 xl12">
             <div class="card-content">
                 <div class="row">
-                    <h5 class="pl-15 grey-text text-darken-2">States List</h5>
+                    <h5 class="pl-15 grey-text text-darken-2">Payroll List</h5>
                     <!-- Table that shows States List -->
                     <table class="responsive-table col s12 m12 l12 xl12">
                         <thead class="grey-text text-darken-2">
                             <tr>
                                 <th>ID</th>
-                                <th>State Name</th>
-                                <th>Created at</th>
-                                <th>Updated at</th>
-                                <th>Options</th>
+                                <th>Name</th>
+                                <th>Month</th>
+                                <th>Year</th>
+                                <th>Payday</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -52,13 +52,13 @@
                             @else
                                 <!-- if there are no states then show this message -->
                                 <tr>
-                                    <td colspan="5"><h6 class="grey-text text-darken-2 center">No States have been found yet!</h6></td>
+                                    <td colspan="5"><h6 class="grey-text text-darken-2 center">No Payroll have been found yet!</h6></td>
                                 </tr>
                             @endif
                             @if(isset($search))
                                 <tr>
                                     <td colspan="3">
-                                        <a href="/states" class="right">Show All</a>
+                                        <a href="/payrolls" class="right">Show All</a>
                                     </td>
                                 </tr>
                             @endif

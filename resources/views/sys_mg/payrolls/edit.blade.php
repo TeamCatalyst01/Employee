@@ -3,15 +3,15 @@
     <div class="container">
         <div class="row">
             <div class="card col s12 m8 offset-m2 l8 offset-l2 xl8 offset-xl2 card-mt-15">
-                <h4 class="center grey-text text-darken-2 card-title">Update Country</h4>
+                <h4 class="center grey-text text-darken-2 card-title">Update Payroll</h4>
                 <div class="card-content">
                     <div class="row">
-                        <form action="{{route('countries.update',$country->id)}}" method="POST">
+                        <form action="{{route('states.update',$state->id)}}" method="POST">
                             <div class="input-field no-margin">
-                            <i class="material-icons prefix">location_on</i>
-                                <input type="text" name="country_name" id="country_name" value="{{Request::old('country_name') ? : $country->country_name}}">
-                                <label for="country_name">Country Name</label>
-                                <span class="{{$errors->has('country_name') ? 'helper-text red-text' : ''}}">{{$errors->first('country_name')}}</span>
+                                <i class="material-icons prefix">grid_on</i>
+                                <input type="text" name="state_name" id="state_name" value="{{Request::old('state_name') ? : $state->state_name}}">
+                                <label for="state_name">Payroll Name</label>
+                                <span class="{{$errors->has('state_name') ? 'helper-text red-text' : ''}}">{{$errors->first('state_name')}}</span>
                             </div>
                             @method('PUT')
                             @csrf()
@@ -19,7 +19,7 @@
                         </form>
                     </div>
                     <div class="card-action">
-                        <a href="/countries">Go Back</a>
+                        <a href="/payrolls">Go Back</a>
                     </div>
                 </div>
             </div>

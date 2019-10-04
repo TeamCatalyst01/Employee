@@ -38,25 +38,13 @@
                         <li>
                             <a href="/divisions" class="waves-effect waves-grey">
                             <i class="material-icons">business</i>
-                                Division
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/cities" class="waves-effect waves-grey">
-                            <i class="material-icons">location_city</i>
-                                City
+                                Designation
                             </a>
                         </li>
                         <li>
                             <a href="/states" class="waves-effect waves-grey">
                             <i class="material-icons">grid_on</i>
-                                State
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/countries" class="waves-effect waves-grey">
-                            <i class="material-icons">terrain</i>
-                                Country
+                                Payroll
                             </a>
                         </li>
                         <li>
