@@ -31,18 +31,6 @@ Route::resource('/departments','DepartmentsController');
 Route::post('/departments/search','DepartmentsController@search')->name('departments.search');
 
 /**
- *  Countries Route(s)
- */
-Route::resource('/countries','CountriesController');
-Route::post('/countries/search','CountriesController@search')->name('countries.search');
-
-/**
- *  Cities Route(s)
- */
-Route::resource('/cities','CitiesController');
-Route::post('/cities/search','CitiesController@search')->name('cities.search');
-
-/**
  *  Salaries Route(s)
  */
 Route::resource('/salaries','SalariesController');
@@ -53,12 +41,6 @@ Route::post('/salaries/search','SalariesController@search')->name('salaries.sear
  */
 Route::resource('/divisions','DivisionsController');
 Route::post('/divisions/search','DivisionsController@search')->name('divisions.search');
-
-/**
- *  States Route(s)
- */
-Route::resource('/states','StatesController');
-Route::post('/states/search','StatesController@search')->name('states.search');
 
 /**
  *  States Route(s)
