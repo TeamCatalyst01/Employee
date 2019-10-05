@@ -1,9 +1,31 @@
-## Employee Management System
-This Application is using Laravel, Materialize-css version 1.0.0 alpha-4 , material icons.
+## Employee Management System with Pay-Roll Feature
+
+This Application is a proposed solution for the "Employee's Information Management" problem statement in Hack@GNE.
+
+## Introduction
+
+- The repository we forked, is by Sagar Maheshwary, https://github.com/SagarMaheshwary/Employee
+
+- The System is capable of managing database of employees of a University/College along with a Pay-Roll System.
+
+- The Application is based on php Laravel, Materialize-css version 1.0.0 alpha-4 , material icons.
+
+## Customizations done by Team-Catalyst
+
+- Added a Pay-Roll Management System, the repository we forked, https://github.com/cleaniquecoders/open-payroll, Open Payroll System.
+
+- Added User Module.
+
+- Modified Division Tab to Designation Tab. 
+
+- Worked on Normalization of overall Database Structure
+
+## Pre-requisites
+
+Php Laravel, Xampp, MySQL
+-make sure you already have xampp or wamp installed if you are on windows machine, mamp for mac , and lamp for linux.
 
 ### Running this web application
-
-- make sure you already have xampp or wamp installed if you are on windows machine, mamp for mac , and lamp for linux.
 
 - clone this repository to your local machine or just download the zip.
 
@@ -26,7 +48,7 @@ This Application is using Laravel, Materialize-css version 1.0.0 alpha-4 , mater
     php artisan migrate
 ```
 
-- create a default admin and genders.
+- create a default admin.
 
 ```bash
     php artisan db:seed
@@ -43,6 +65,7 @@ This Application is using Laravel, Materialize-css version 1.0.0 alpha-4 , mater
 ```bash
     php artisan storage:link
 ```
+- Install Open-Payroll. By referring the Readme.md file of Open-Payroll, https://github.com/cleaniquecoders/open-payroll.
 
 - Start the development server.
 
